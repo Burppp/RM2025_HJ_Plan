@@ -1,0 +1,79 @@
+% 文档全局设定与引入必要宏包
+
+\documentclass[a4paper, twoside, zihao=-4, sub3section]{article}
+\usepackage[hmargin=0.79in, top=0.95in, bottom=1.13in]{geometry}
+\geometry{headsep=0.14in, footskip=0.47in}
+
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\numberwithin{figure}{section}
+\usepackage{fancyhdr}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{ltxtable}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{graphicx}
+
+% 字体配置
+
+\usepackage[UTF8, heading=true]{ctex}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\setCJKmainfont[AutoFakeBold, AutoFakeSlant]{SimSun.ttc}
+\setCJKsansfont[AutoFakeBold, AutoFakeSlant]{SimHei.ttf}
+
+% 段落格式配置
+
+\linespread{1.62}
+\setlength{\parskip}{5pt}
+
+% 目录配置
+
+\usepackage[titles]{tocloft}
+\usepackage{hyperref}
+% 去除引用红框，改变颜色
+\hypersetup{colorlinks=true,linkcolor=black}
+% 重新定义目录的标题样式
+\renewcommand*\contentsname{\hfill \color{black}\zihao{-2}\textbf{目录} \hfill}
+% 设置点间距
+\renewcommand\cftdotsep{0.1}
+\renewcommand\cftsecdotsep{\cftdotsep}
+\CTEXsetup[name={,.}]{section}
+% 调节缩进
+\setlength{\cftsubsecindent}{1em}
+\setlength{\cftsubsubsecindent}{3em}
+% 调节编号宽度
+\setlength{\cftsecnumwidth}{14pt}
+\setlength{\cftsubsecnumwidth}{20pt}
+\setlength{\cftsubsubsecnumwidth}{30pt}
+% 调节行距
+\setlength{\cftbeforesecskip}{0pt}
+
+% 标题配置
+
+\usepackage{xcolor}
+\newcommand{\titlecolor}{\color[RGB]{51, 51, 153}}
+\usepackage{titlesec}
+\titleformat{\section}
+  {\titlecolor\zihao{2}\bfseries}
+  {\thesection.}{0.5em}{}
+\titleformat{\subsection}
+  {\titlecolor\zihao{-2}\bfseries}
+  {\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}
+  {\titlecolor\zihao{3}\bfseries}
+  {\thesubsubsection}{0.5em}{}
+% 四级标题
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+  {\titlecolor\zihao{-3}\bfseries}
+  {\theparagraph}{0.5em}{}
+
+% 表格样式配置
+
+\definecolor{tabhdcolor}{hsb}{0, 0, 0.82353}
+\AtBeginEnvironment{longtable}{\sffamily}
+\renewcommand{\arraystretch}{1.1}

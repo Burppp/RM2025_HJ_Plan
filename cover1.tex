@@ -1,0 +1,38 @@
+% 封面
+
+\includepdf{section/cover1.pdf}
+
+% 编码页数从1开始
+\setcounter{page}{1}
+
+% 页眉页脚
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[EL, OR]{
+  \includegraphics[height=0.15in]{figure/header_img.png}
+}
+\fancyfoot[EL]{
+  \zihao{-4}\thepage
+  \hspace{0.4cm}
+  \raisebox{.15ex}{
+    \color{gray}{
+      \zihao{-5}© 2023 \ 大疆创新 \ \ 版权所有
+    }
+  }
+}
+\fancyfoot[OR]{
+  \raisebox{.15ex}{
+    \color{gray}{
+      \zihao{-5}© 2023 \ 大疆创新 \ \ 版权所有
+    }
+  }
+  \hspace{0.4cm}
+  \zihao{-4}\thepage
+}
+
+% 目录
+\begin{center}
+  \zihao{5}\tableofcontents
+\end{center}
+
+\newpage
