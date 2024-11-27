@@ -35,57 +35,57 @@
         %%% 第2行的表格信息
         %\multirow{3}{*}{机械组} &
         \begin{center}
-            双极发射
+            机械结构
         \end{center} &
         \begin{center}
-            将英雄机器人的发射机构由三摩擦轮优化为双级摩擦发射，提高吊射以及中距离击打的命中率
+            完成工程的机械结构，包括底盘、机械臂、存取银矿机构、自定义控制器
         \end{center} &
         \begin{center}
-            1名机械组成员\linebreak1名电控成员
+            3名机械组成员
         \end{center} &
         \begin{center}
-            熟悉运动简图分析，并且对于弹链运动有清晰的了解。并且对于弹丸定心和稳定需求要有一定的理解
+            solidwork使用，机械零件选型
         \end{center} &
         \begin{center}
-            3周
+            4周
         \end{center}\\
         
     \hline
         \begin{center}
-            丝杆偏置
+            自定义控制器
         \end{center} &
         %%% 第3行的表格信息
         \begin{center}
-            将旧云台的中心丝杆放置位置更改为丝杆外置，提高机械方面的俯仰角度
+            完成一个完善且可以通过UART/CAN向主板发送6个角度的自定义控制器，在此基础上根据不同模式添加不同内容
         \end{center} &
         %%% 第3行的第2~3列单元格被合并，左对齐，且左右均有分割线
         %\multicolumn{2}{| l |}{content 3 2-3} &
         \begin{center}
-            1名机械组成员
+            1名电控组成员
         \end{center} &
         \begin{center}
-            能够使用建模软件对于运动进行简单的建模仿真分析，并且要对于材料力学有一定的学习，基本需要了解如何应力分析并且避免应力集中
+            can通讯，stm32基础，机械臂解算
         \end{center} &
         \begin{center}
-            1周
+            3周
         \end{center}\\
 
     \hline
     
         \begin{center}
-            图传结构
+            下位机通讯与框架
         \end{center} &
         \begin{center}
-            重新设计图传结构，利用简单连杆实现图传的简单运动并增强稳定性。并且重新配置望远镜的放置位置以及机械限位
+            完成自定义控制器数据接受、图传链路、上下位机通讯等，对底盘进行解算与对机械臂电机进行限位、控制等
         \end{center} &
         \begin{center}
-            1名机械组成员
+            1名电控组成员
         \end{center} &
         \begin{center}
-            对于机械原理有所学习，可以绘制简单的摇杆机构
+            FreeRTOS系统熟练度，掌握不同通信协议，pid算法控制，底盘解算、电机控制与参数调整等。尝试在下位机实现机械臂正逆解算
         \end{center} &
         \begin{center}
-            1周
+            4周
         \end{center} \\
         
     \hline
@@ -94,19 +94,19 @@
         %%% 第4行开始，连续2行的第1列单元格被合并，自动列宽
         %\multirow{3}{*}{电控组} &
         \begin{center}
-            舵轮驱动
+            上位机
         \end{center} &
         \begin{center}
-            将麦轮驱动结构更改为舵轮驱动结构
+            采用ros2进行开发，将机械臂urdf与模型转化并进行摄像头位置、控制仿真等，对机械臂机械路径规划
         \end{center} &
         \begin{center}
-            1名机械组成员，2名电控组成员
+            1名电控组成员
         \end{center} &
         \begin{center}
-            
+            熟悉ros控制和moveit框架，对urdf文件有一定的了解
         \end{center} &
         \begin{center}
-            2周
+            4周
         \end{center}\\
 
     \hline
@@ -116,98 +116,22 @@
         %%% 第5行的表格信息
         %%% 第5行由于第1列在上一行已被合并，所以建议不要写入信息，虽然写入信息也会显示出
         \begin{center}
-            中心供弹
+            整车调试
         \end{center} &
         \begin{center}
-            供弹方式由下供弹改为中心供弹
+            对第一版车进行调试，然后总结问题并做好调试日志与问题解决方案等，针对问题进行修改
         \end{center} &
         \begin{center}
-            1名机械组成员，2名电控组成员
+            3名机械组成员，3名电控组成员
         \end{center} &
         \begin{center}
-            
+            调试方法与日志管理
         \end{center} &
         \begin{center}
-            2周
+            长期进行
         \end{center}\\
 
     \hline
-    
-        \begin{center}
-            
-        \end{center} &
-        \begin{center}
-            
-        \end{center} &
-        \begin{center}
-            
-        \end{center} &
-        \begin{center}
-            
-        \end{center} &
-        \begin{center}
-            
-        \end{center} \\
-        
-    \hline
-    
-        %%% 第6行的表格信息
-        %\multirow{3}{*}{视觉组} &
-        &
-        &
-        %%% 第6行开始，连续2行的第2~4列单元格被合并，居中对齐，且左侧有分割线，自动列宽
-        %\multicolumn{3}{| c }{\multirow{2}{*}{content 6-7 2-4}} \\
-        &
-        &
-        \\
-
-    \hline
-    %%% 此处分割一行的第1至1个单元格，即只有第一个单元格下面有横线
-    %\cline{1-1}
-    
-        %%% 第7行的表格信息
-        %content 7 1 &
-        %%% 第7行由于第2~4列在上一行已被合并，所以建议不要写入信息，虽然写入信息也会显示出，而且建议像下面一样合并表格防止竖线分割
-        %\multicolumn{3}{| c }{} \\
-
-        &
-        &
-        &
-        &
-        \\
-
-    \hline
-
-        &
-        &
-        &
-        &
-        \\
-        
-    \hline
-
-        %\multirow{3}{*}{硬件组} &
-        &
-        &
-        &
-        &
-        \\
-
-    \hline
-
-        &
-        &
-        &
-        &
-        \\
-
-    \hline
-
-        &
-        &
-        &
-        &
-        \\
     
 \end{longtable}
 %%% 表格演示-END

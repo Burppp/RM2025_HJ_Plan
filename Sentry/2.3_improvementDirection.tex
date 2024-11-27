@@ -36,42 +36,42 @@
             机械组
         \end{center} &
         \begin{center}
-            
+            轮毂
         \end{center} &
         \begin{center}
-            
+            越野轮取代包脚轮
         \end{center} &
         \begin{center}
-            
+            性能良好耐磨，装配无干涉
         \end{center}\\
         
     \hline
         \begin{center}
-            
+            机械组
         \end{center}&
         \begin{center}
-            
+            大yaw轴承
         \end{center}&
         \begin{center}
-            
+            缩小固定轴承直径
         \end{center}&
         \begin{center}
-            
+            减重达到检录要求
         \end{center}\\
         
     \hline
 
         \begin{center}
-            
+            机械组
         \end{center}&
         \begin{center}
-            
+            云台电机
         \end{center}&
         \begin{center}
-            
+            6020改为4310
         \end{center}&
         \begin{center}
-            
+            优化控制、减重达到检录要求
         \end{center}\\
         
     \hline
@@ -80,16 +80,16 @@
         %%% 第4行开始，连续2行的第1列单元格被合并，自动列宽
         %\multirow{3}{*}{电控组} &
         \begin{center}
-            
+            机械组
         \end{center} &
         \begin{center}
-            
+            板材、铝件、机加工
         \end{center} &
         \begin{center}
-            
+            镂空
         \end{center} &
         \begin{center}
-            
+            减重达到检录要求
         \end{center} \\
 
     \hline
@@ -99,31 +99,31 @@
         %%% 第5行的表格信息
         %%% 第5行由于第1列在上一行已被合并，所以建议不要写入信息，虽然写入信息也会显示出
         \begin{center}
-            
+            电控组
         \end{center} &
         \begin{center}
-            
+            底层框架
         \end{center} &
         \begin{center}
-            
+            重构并优化底层框架，优化相关控制和信号处理的算法
         \end{center} &
         \begin{center}
-            
+            封装良好，可读性强，算法合理而且效果优秀
         \end{center} \\
 
     \hline
 
        \begin{center}
-           
+           电控组
        \end{center} &
        \begin{center}
-           
+           云台IMU数据处理
        \end{center} &
        \begin{center}
-           
+           对IMU反馈的原始数据做处理，消除大部分的静漂和热噪声，使数据可信度提高
        \end{center} &
        \begin{center}
-           
+           短时间内，机构上所捷联的IMU解算出的数据准确且收敛，而非不断漂移，长时间工作状态下可以通过周期性校准或者其他方式令数据依旧准确
        \end{center} \\
         
     \hline
@@ -131,16 +131,16 @@
         %%% 第6行的表格信息
         %\multirow{3}{*}{视觉组} &
         \begin{center}
-            
+            电控组
         \end{center}&
         \begin{center}
-            
+            行为树
         \end{center}&
         \begin{center}
-            
+            在构建出基本完备的行为树的前提条件下利用ML抑或是结合RL算法研究自生成行为树辅助哨兵决策
         \end{center}&
         \begin{center}
-            
+            使哨兵在能够在多变的情况下做出更优的决策
         \end{center}\\
 
     %%% 此处分割一行的第1至1个单元格，即只有第一个单元格下面有横线
@@ -153,77 +153,137 @@
         %\multicolumn{3}{| c }{} \\
 
        \begin{center}
-           
+           电控组
        \end{center} &
        \begin{center}
-           
+           云台
        \end{center} &
        \begin{center}
-           
+           优化云台控制效果
        \end{center} &
        \begin{center}
-           
+           令两侧小云台在转动停止时不会因为惯性而发生摆动，大云台不会在全向感知判断敌人来向快速转动180°时不会因为积分饱和而导致后续控制效果不佳
        \end{center} \\
 
     \hline
 
        \begin{center}
-           
+           电控组
        \end{center} &
        \begin{center}
-           
+           底盘
        \end{center} &
        \begin{center}
-           
+           完善舵轮底盘的控制效果
        \end{center} &
        \begin{center}
-           
+           完善舵轮奇异点转舵的能力，提高舵轮底盘的响应
        \end{center} \\
         
     \hline
 
         %\multirow{3}{*}{硬件组} &
        \begin{center}
-           
+           电控组
        \end{center} &
        \begin{center}
-           
+           功率控制
        \end{center} &
        \begin{center}
-           
+           基于华中科大狼牙战队的功率控制方案拟合底盘转速-功率期限，并实现底盘的功率控制
        \end{center} &
        \begin{center}
-           
+           功率控制下底盘不会因为超功率接扣血，速度衰减平滑无抖动
        \end{center} \\
 
     \hline
 
        \begin{center}
-           
+           电控组
        \end{center} &
        \begin{center}
-           
+           优化数据通讯链路
        \end{center} &
        \begin{center}
-           
+           减少主控板数量，两个小电脑之间使用socket通讯
        \end{center} &
        \begin{center}
-           
+           使数据通讯无延迟或者延迟小
        \end{center} \\
 
     \hline
 
        \begin{center}
-           
+           视觉组
        \end{center} &
        \begin{center}
-           
+           重定位
        \end{center} &
        \begin{center}
-           
+           添加重定位功能，自动校准哨兵摆放的初始位姿
        \end{center} &
        \begin{center}
-           
+           可接受0-3米的平移误差和0-30°的旋转误差
+       \end{center} \\
+
+    \hline
+
+       \begin{center}
+           视觉组
+       \end{center} &
+       \begin{center}
+           避障
+       \end{center} &
+       \begin{center}
+           增加避障程序
+       \end{center} &
+       \begin{center}
+           在1m/s的速度下，周围有其他车辆移动的情况下，连续导航7min不发生碰撞
+       \end{center} \\
+
+    \hline
+
+       \begin{center}
+           视觉组
+       \end{center} &
+       \begin{center}
+           全向感知
+       \end{center} &
+       \begin{center}
+           添加全向感知，使哨兵能够360度识别敌方单位
+       \end{center} &
+       \begin{center}
+           能够检测8米内的敌方单位，并将数据反馈给主机辅助枪管瞄准
+       \end{center} \\
+
+    \hline
+
+       \begin{center}
+           视觉组
+       \end{center} &
+       \begin{center}
+           标记
+       \end{center} &
+       \begin{center}
+           识别敌方单位并将坐标反馈给雷达，辅助雷达进行标记
+       \end{center} &
+       \begin{center}
+           能够在敌方车辆静止的情况下返回正确坐标返回给雷达
+       \end{center} \\
+
+    \hline
+
+       \begin{center}
+           视觉组
+       \end{center} &
+       \begin{center}
+           点云聚类
+       \end{center} &
+       \begin{center}
+           通过点云识别车辆位置
+       \end{center} &
+       \begin{center}
+           能够检测8米内的点云是否存在车辆类型的点云，并返回车辆点云坐标
        \end{center} \\
     
 \end{longtable}

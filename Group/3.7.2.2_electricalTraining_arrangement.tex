@@ -1,7 +1,7 @@
 %%% 本文档作为功能演示
 
 %%% 表格演示-BEGIN
-\begin{longtable}{ p{2cm} | p{3cm} | p{3cm} | p{4.8cm} | p{2cm} |}
+\begin{longtable}{ p{1.5cm} | p{3cm} | p{6cm} | p{4.3cm} |}
 
     \hline
 
@@ -12,81 +12,67 @@
     \rowcolor{tabhdcolor}
 
         \begin{center}
-            项目
-        \end{center}  &
-        \begin{center}
-            任务
-        \end{center}  &
-        \begin{center}
-           人力评估
+            培训内容
         \end{center} &
         \begin{center}
-            人员技能要求
-        \end{center}  &
+            实践
+        \end{center} &
         \begin{center}
-            耗时评估
-        \end{center}  \\ 
-        
+            验收任务
+        \end{center} &
+        \begin{center}
+            负责人
+        \end{center}\\
+
+    %%% 此处完整分割一行
     \hline
 
     %%% 此处标识以上为表格头，即在每页的表格头部重复显示的内容（一堆header）
     \endhead
 
         %%% 第2行的表格信息
-        %\multirow{3}{*}{机械组} &
         \begin{center}
-            飞镖发射架机械部分
+            %\multirow{3}{*}{机械组}
+            GPIO+中断
         \end{center} &
         \begin{center}
-            更改发射架机械部分
+            10月22日-10月24日
         \end{center} &
         \begin{center}
-            1名机械组成员
+            按键控灯
         \end{center} &
         \begin{center}
-            飞镖架的机械设计，飞镖的机械设计，摄像头的位置调整
-        \end{center} &
-        \begin{center}
-            8周
+            郑海洋
         \end{center}\\
         
     \hline
         \begin{center}
-            飞镖底盘机械部分
-        \end{center} &
-        %%% 第3行的表格信息
+            TIM+PWM
+        \end{center}&
         \begin{center}
-            更改底盘yaw轴设计
-        \end{center} &
-        %%% 第3行的第2~3列单元格被合并，左对齐，且左右均有分割线
-        %\multicolumn{2}{| l |}{content 3 2-3} &
+            10月24日-10月28日
+        \end{center}&
         \begin{center}
-            2名机械组成员
-        \end{center} &
+            PWM驱动舵机，PWM呼吸灯
+        \end{center}&
         \begin{center}
-            飞镖架的机械设计，飞镖的机械设计，摄像头的位置调整
-        \end{center} &
-        \begin{center}
-            8周
+            赖咏怡
         \end{center}\\
-
+        
     \hline
-    
+
         \begin{center}
-            制导镖与非制导镖
-        \end{center} &
+            串口通讯
+        \end{center}&
         \begin{center}
-            机械制作制导镖与非制导镖，电控通过视觉识别引导灯并通过控制舵面击打基地随机移动装甲板
-        \end{center} &
+            10月28日-10月30日
+        \end{center}&
         \begin{center}
-            2名机械组成员
-        \end{center} &
+            电脑-板间通讯
+        \end{center}&
         \begin{center}
-            熟悉飞镖体的气动设计，会使用流体仿真软件，熟悉视觉瞄准与舵面控制
-        \end{center} &
-        \begin{center}
-            长期优化和测试
-        \end{center} \\
+            王旭东
+        \end{center}\\
         
     \hline
     
@@ -94,20 +80,17 @@
         %%% 第4行开始，连续2行的第1列单元格被合并，自动列宽
         %\multirow{3}{*}{电控组} &
         \begin{center}
-            飞镖控制
+            CAN+电机控制
         \end{center} &
         \begin{center}
-            使飞镖系统能够全自动发射飞镖并联合视觉组尝试自主打击前哨站与基地
+            10月31日-11月5日
         \end{center} &
         \begin{center}
-            2名电控组成员
+            CAN控制电机转动
         \end{center} &
         \begin{center}
-            了解飞镖控制代码框架，协助测试
-        \end{center} &
-        \begin{center}
-            8周
-        \end{center}\\
+            舒心
+        \end{center} \\
 
     \hline
     %%% 此处分割一行的第2至3个单元格
@@ -116,19 +99,48 @@
         %%% 第5行的表格信息
         %%% 第5行由于第1列在上一行已被合并，所以建议不要写入信息，虽然写入信息也会显示出
         \begin{center}
-            飞镖架视觉识别
+            PID控制电机
         \end{center} &
         \begin{center}
-            前哨站与基地引导灯的识别与定位
+            11月5日-11月8日
         \end{center} &
         \begin{center}
-            1名视觉组成员
+            PID控制电机
         \end{center} &
         \begin{center}
-            数据集制作，模型训练，模型部署及推理加速
-        \end{center} &
+            梁红涛
+        \end{center} \\
+
+    \hline
+
+       \begin{center}
+           FreeRTOS任务创建
+       \end{center} &
+       \begin{center}
+           11月8日-11月10日
+       \end{center} &
+       \begin{center}
+           FreeRTOS创建任务
+       \end{center} &
+       \begin{center}
+           王旭东
+       \end{center} \\
+        
+    \hline
+    
+        %%% 第6行的表格信息
+        %\multirow{3}{*}{视觉组} &
         \begin{center}
-            8周
+            校内赛任务
+        \end{center}&
+        \begin{center}
+            11月12日-12月15日
+        \end{center}&
+        \begin{center}
+            周期发布校内赛相关
+        \end{center}&
+        \begin{center}
+            郑海洋
         \end{center}\\
 
     \hline

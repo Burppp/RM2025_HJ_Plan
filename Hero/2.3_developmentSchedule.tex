@@ -41,7 +41,7 @@
             将英雄机器人的发射机构由三摩擦轮优化为双级摩擦发射，提高吊射以及中距离击打的命中率
         \end{center} &
         \begin{center}
-            1名机械组成员\linebreak1名电控成员
+            1名机械组成员，1名电控成员
         \end{center} &
         \begin{center}
             熟悉运动简图分析，并且对于弹链运动有清晰的了解。并且对于弹丸定心和稳定需求要有一定的理解
@@ -103,7 +103,7 @@
             1名机械组成员，2名电控组成员
         \end{center} &
         \begin{center}
-            
+            机械设计原理有一定了解，对舵轮的驱动方式和结构要有认识
         \end{center} &
         \begin{center}
             2周
@@ -125,89 +125,124 @@
             1名机械组成员，2名电控组成员
         \end{center} &
         \begin{center}
-            
+            对齿轮传动有学习，可以熟练地对弹丸和弹链之间的动态受力分析
         \end{center} &
         \begin{center}
-            2周
+            3周
         \end{center}\\
 
     \hline
     
         \begin{center}
-            
+            代码运用新框架
         \end{center} &
         \begin{center}
-            
+            将代码用统一的规范重新编写，同时对每一个模块功能解耦，增加代码的可读性和维护性
         \end{center} &
         \begin{center}
-            
+            3名电控组成员
         \end{center} &
         \begin{center}
-            
+            需要精通C语言，尤其是指针，还要有代码管理能力
         \end{center} &
         \begin{center}
-            
+            2周
         \end{center} \\
         
     \hline
     
-        %%% 第6行的表格信息
-        %\multirow{3}{*}{视觉组} &
-        &
-        &
-        %%% 第6行开始，连续2行的第2~4列单元格被合并，居中对齐，且左侧有分割线，自动列宽
-        %\multicolumn{3}{| c }{\multirow{2}{*}{content 6-7 2-4}} \\
-        &
-        &
-        \\
-
-    \hline
-    %%% 此处分割一行的第1至1个单元格，即只有第一个单元格下面有横线
-    %\cline{1-1}
-    
-        %%% 第7行的表格信息
-        %content 7 1 &
-        %%% 第7行由于第2~4列在上一行已被合并，所以建议不要写入信息，虽然写入信息也会显示出，而且建议像下面一样合并表格防止竖线分割
-        %\multicolumn{3}{| c }{} \\
-
-        &
-        &
-        &
-        &
-        \\
+        \begin{center}
+            代码运用新框架
+        \end{center} &
+        \begin{center}
+            将代码用统一的规范重新编写，同时对每一个模块功能解耦，增加代码的可读性和维护性
+        \end{center} &
+        \begin{center}
+            3名电控组成员
+        \end{center} &
+        \begin{center}
+            需要精通C语言，尤其是指针，还要有代码管理能力
+        \end{center} &
+        \begin{center}
+            2周
+        \end{center} \\
 
     \hline
 
-        &
-        &
-        &
-        &
-        \\
+        \begin{center}
+            稳定弹速
+        \end{center} &
+        \begin{center}
+            对于新的双级发射结构进行多次测试，拟合发射速度数据，缩小误差
+        \end{center} &
+        \begin{center}
+            1名电控组成员，1名机械组成员
+        \end{center} &
+        \begin{center}
+            对于发射原理以及发射结构有一定了解，能了解影响发射准确度的具体原因并优化
+        \end{center} &
+        \begin{center}
+            2周
+        \end{center} \\
         
     \hline
 
-        %\multirow{3}{*}{硬件组} &
-        &
-        &
-        &
-        &
-        \\
+        \begin{center}
+            稳定性测试
+        \end{center} &
+        \begin{center}
+            对于英雄的各个功能进行多次测试，保证其正常运行（例如防止堵转、复杂路段的姿态、射速及弹道的稳定）
+        \end{center} &
+        \begin{center}
+            1名电控组成员，1名机械组成员，1名视觉组成员
+        \end{center} &
+        \begin{center}
+            对于代码整体熟悉，对于各个功能的原理有所了解，能够及时发现问题所在，沟通并解决
+        \end{center} &
+        \begin{center}
+            长期进行
+        \end{center} \\
 
     \hline
 
-        &
-        &
-        &
-        &
-        \\
+    %%% 此处分割一行的第1至1个单元格，即只有第一个单元格下面有横线
+    %\cline{1-1}
+    
+        \begin{center}
+            前哨站
+        \end{center} &
+        \begin{center}
+            前哨站预测击打
+        \end{center} &
+        \begin{center}
+            1名电控组成员，1名视觉组成员
+        \end{center} &
+        \begin{center}
+            坐标系转换，数据处理,数据平滑
+        \end{center} &
+        \begin{center}
+            2周
+        \end{center} \\
 
     \hline
 
-        &
-        &
-        &
-        &
-        \\
+        \begin{center}
+            吊射
+        \end{center} &
+        \begin{center}
+            前哨站、基地的锁定，装甲板 关键点识别，测距，能够稳定吊射，提高精度
+        \end{center} &
+        \begin{center}
+            1名电控组成员，1名机械组成员，1名视觉组成员
+        \end{center} &
+        \begin{center}
+            训练神经网络，对于滤波、图像识别、视觉定位及测距等算法熟练掌握
+        \end{center} &
+        \begin{center}
+            3周
+        \end{center} \\
+
+    \hline
     
 \end{longtable}
 %%% 表格演示-END

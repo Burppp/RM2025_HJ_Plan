@@ -36,42 +36,42 @@
             机械组
         \end{center} &
         \begin{center}
-            
+            轮组
         \end{center} &
         \begin{center}
-            
+            改舵轮为麦克纳姆轮
         \end{center} &
         \begin{center}
-            
+            提高底盘稳定性，完成底盘的稳定转向
         \end{center}\\
         
     \hline
         \begin{center}
-            
+            机械组
         \end{center}&
         \begin{center}
-            
+            重心问题
         \end{center}&
         \begin{center}
-            
+            减少机械臂和底盘高带来的翻车可能
         \end{center}&
         \begin{center}
-            
+            合理选择避震器，以及对车的配件进行合理放置，降低重心
         \end{center}\\
         
     \hline
 
         \begin{center}
-            
+            机械组
         \end{center}&
         \begin{center}
-            
+            抬升
         \end{center}&
         \begin{center}
-            
+            比原来抬升再高一点使其可以取出银矿
         \end{center}&
         \begin{center}
-            
+            高度可以使得取完银矿后翻转180度也不会超过1200*1200
         \end{center}\\
         
     \hline
@@ -80,16 +80,16 @@
         %%% 第4行开始，连续2行的第1列单元格被合并，自动列宽
         %\multirow{3}{*}{电控组} &
         \begin{center}
-            
+            机械组
         \end{center} &
         \begin{center}
-            
+            抬升架上取矿个数
         \end{center} &
         \begin{center}
-            
+            一键三矿
         \end{center} &
         \begin{center}
-            
+            使其机械臂可以完成一次性取完三个银矿，且将该机构作为存矿机构
         \end{center} \\
 
     \hline
@@ -99,31 +99,31 @@
         %%% 第5行的表格信息
         %%% 第5行由于第1列在上一行已被合并，所以建议不要写入信息，虽然写入信息也会显示出
         \begin{center}
-            
+            电控组
         \end{center} &
         \begin{center}
-            
+            底层通讯
         \end{center} &
         \begin{center}
-            
+            主板数量多，板间通讯复杂，减少主板优化通讯
         \end{center} &
         \begin{center}
-            
+            保守使用电机与优化CAN线上的通讯
         \end{center} \\
 
     \hline
 
        \begin{center}
-           
+           电控组
        \end{center} &
        \begin{center}
-           
+           上位机
        \end{center} &
        \begin{center}
-           
+           ros能力较有限，基于TCP/IP的通信，不适合硬实时应用
        \end{center} &
        \begin{center}
-           
+           采用ros2进行开发。使用了DDS作为其通信中间件，提供了更好的数据传输性能和确定性
        \end{center} \\
         
     \hline
@@ -131,16 +131,16 @@
         %%% 第6行的表格信息
         %\multirow{3}{*}{视觉组} &
         \begin{center}
-            
+            电控组
         \end{center}&
         \begin{center}
-            
+            控制器
         \end{center}&
         \begin{center}
-            
+            解决旧控制器操作复杂，学习成本高，操作不易且较慢的问题
         \end{center}&
         \begin{center}
-            
+            确定使用大臂模型缩小机械臂进行控制
         \end{center}\\
 
     %%% 此处分割一行的第1至1个单元格，即只有第一个单元格下面有横线
@@ -153,78 +153,19 @@
         %\multicolumn{3}{| c }{} \\
 
        \begin{center}
-           
+           视觉组
        \end{center} &
        \begin{center}
-           
+           自动取矿
        \end{center} &
        \begin{center}
-           
+           实现视觉自动兑矿
        \end{center} &
        \begin{center}
-           
+           视觉框取兑矿框的四个角，获取兑矿框中点并传入上位机实现路径规划
        \end{center} \\
 
     \hline
-
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} \\
-        
-    \hline
-
-        %\multirow{3}{*}{硬件组} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} \\
-
-    \hline
-
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} \\
-
-    \hline
-
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} \\
     
 \end{longtable}
 %%% 表格演示-END

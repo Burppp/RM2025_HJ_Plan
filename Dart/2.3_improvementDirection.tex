@@ -36,42 +36,42 @@
             机械组
         \end{center} &
         \begin{center}
-            
+            飞镖底盘
         \end{center} &
         \begin{center}
-            
+            pitch轴从可变为固定，减小不不稳定因素，利用丝杆驱动yaw轴，增加稳定性
         \end{center} &
         \begin{center}
-            
+            底盘可稳定改变yaw轴，固定pitch轴可提高飞镖上层结构稳定性
         \end{center}\\
         
     \hline
         \begin{center}
-            
+            机械组
         \end{center}&
         \begin{center}
-            
+            飞镖发射架
         \end{center}&
         \begin{center}
-            
+            改为拉簧式弹射型发射架
         \end{center}&
         \begin{center}
-            
+            利用蓄能能量稳定的优势，减小飞镖体落点散布，增加飞镖发射的稳定性
         \end{center}\\
         
     \hline
 
         \begin{center}
-            
+            机械组
         \end{center}&
         \begin{center}
-            
+            飞镖体
         \end{center}&
         \begin{center}
-            
+            更换镖体材料为TPU-95a，增加镖体气动性能，制作制导镖体
         \end{center}&
         \begin{center}
-            
+            增加飞镖体寿命；确保镖体有高度的一致性；增加非制导镖体在飞行过程的稳定性；增加制导镖体在飞行过程的机动性
         \end{center}\\
         
     \hline
@@ -80,16 +80,16 @@
         %%% 第4行开始，连续2行的第1列单元格被合并，自动列宽
         %\multirow{3}{*}{电控组} &
         \begin{center}
-            
+            机械组
         \end{center} &
         \begin{center}
-            
+            飞镖装填系统
         \end{center} &
         \begin{center}
-            
+            改用了全新的换弹机构，使得装填部分可以适配更多形态的飞镖，采用更为轻便的材料
         \end{center} &
         \begin{center}
-            
+            提高装填速度和稳定性，确保能在开启闸门的时间里完成稳定的1~2次装填
         \end{center} \\
 
     \hline
@@ -99,31 +99,31 @@
         %%% 第5行的表格信息
         %%% 第5行由于第1列在上一行已被合并，所以建议不要写入信息，虽然写入信息也会显示出
         \begin{center}
-            
+            电控组
         \end{center} &
         \begin{center}
-            
+            飞镖架yaw轴稳定
         \end{center} &
         \begin{center}
-            
+            在飞镖发射瞬间,减小弹簧震动对飞镖yaw轴带来的影响
         \end{center} &
         \begin{center}
-            
+            将震动带来的角度偏差影响缩小到0.1度以下
         \end{center} \\
 
     \hline
 
        \begin{center}
-           
+           电控组
        \end{center} &
        \begin{center}
-           
+           换弹系统
        \end{center} &
        \begin{center}
-           
+           调整换弹系统的GM6020电机pid参数,优化pid算法,减少电机旋转到指定位置时的抖动和偏差
        \end{center} &
        \begin{center}
-           
+           卡弹率不超过5%
        \end{center} \\
         
     \hline
@@ -131,16 +131,16 @@
         %%% 第6行的表格信息
         %\multirow{3}{*}{视觉组} &
         \begin{center}
-            
+            电控组
         \end{center}&
         \begin{center}
-            
+            制导镖体
         \end{center}&
         \begin{center}
-            
+            给镖体装载imu获取镖体姿态，解算姿态后控制镖体的机翼，尾翼实现姿态控制，并且受瞬时干扰后具有恢复到原来平衡状态的能力
         \end{center}&
         \begin{center}
-            
+            通过四元数及卡尔曼滤波实现准确姿态数据的读取，结合长焦摄像头，识别目标位置，做到击打基地随机移动靶
         \end{center}\\
 
     %%% 此处分割一行的第1至1个单元格，即只有第一个单元格下面有横线
@@ -153,78 +153,19 @@
         %\multicolumn{3}{| c }{} \\
 
        \begin{center}
-           
+           视觉组
        \end{center} &
        \begin{center}
-           
+           引导灯识别与定位
        \end{center} &
        \begin{center}
-           
+           优化识别模型，提高识别速率。对引导灯坐标进行滤波
        \end{center} &
        \begin{center}
-           
+           实现实时性识别，识别不抖动
        \end{center} \\
 
     \hline
-
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} \\
-        
-    \hline
-
-        %\multirow{3}{*}{硬件组} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} \\
-
-    \hline
-
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} \\
-
-    \hline
-
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} &
-       \begin{center}
-           
-       \end{center} \\
     
 \end{longtable}
 %%% 表格演示-END

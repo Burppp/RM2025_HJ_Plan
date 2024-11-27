@@ -54,13 +54,13 @@
     \hline
     
         \begin{center}
-            外壳快拆设计 
+            穿越隧道 
         \end{center} \cellcolor{gndcolor} &
         \begin{center}
-            因为原先的保护壳并没有使用快拆的设计，导致在平常测试与在赛场维修时出现了较多的不便，带来了不必要的时间浪费
+            新赛季地形需要步兵具有更加小的体积去适应各种地形，能够穿越狗洞将能更快到达高地区减少能量消耗
         \end{center} \cellcolor{gndcolor} &
         \begin{center}
-            设计上队内先进行沟通，先是电控和视觉来提出需要较常拆装和维修的位置，再由机械来设计出快拆功能；快拆主要使用了合页与弹簧搭扣的配合设计
+            将原有的云台进行改进，降低云台高度，使步兵可以顺利的通过隧洞
         \end{center} \cellcolor{gndcolor} \\
 
     %%% 此处分割一行的第2至3个单元格
@@ -68,25 +68,25 @@
     %\cline{2-3}
     
         \begin{center}
-            
+            稳定飞坡
         \end{center} &
         \begin{center}
-            
+            新赛季英雄吊射需要进入部署模式，提高飞坡稳定性，快速打击敌方车辆十分重要
         \end{center} &
         \begin{center}
-            
+            电控方面，优化功率控制，完善电容充放电操作
         \end{center} \\
         
     \hline
     
         \begin{center}
-            
+            稳定跨越复杂地形
         \end{center} &
         \begin{center}
-            
+            能不依靠跳跃在规定时间内登上高地或跨越其他地形
         \end{center} &
         \begin{center}
-            
+            设计四轮足式底盘（麦轮＋狗腿构型）
         \end{center} \\
 
     %%% 此处分割一行的第1至1个单元格，即只有第一个单元格下面有横线
@@ -94,61 +94,64 @@
     \hline
     
         \begin{center}
-            
+            Pid优化
         \end{center} &
         \begin{center}
-            
+            步兵普遍存在yaw轴角度环pout周期性振荡产生莫名响声的情况，需要优化pid。或是为了视觉击打需求优化轮腿步兵的pid有转向、防劈叉、腿长和Roll。选择合适的参数可以使机器人在赛场中的表现更优越
         \end{center} &
         \begin{center}
-            
+            对于yaw异响问题，增加微分先行，ols拟合的同时，优化pid计算函数。对于满足视觉需求加快响应速度等要求，添加前馈，梯形积分等
+            \newline 防劈叉：把它调得贼硬，避免发生劈叉动作(能做到稳定可控有用的劈叉动作另说)
+            \newline 腿长：PD控制，做到收敛快，不超调且软（按下去像弹簧一样），p和d不能太大，根据经验，p < d
+            \newline Roll : 同样是PD,做到收敛快，不超调且软,不能加入积分项，避免车侧翻时误差累积
         \end{center} \\
         
     \hline
     
         \begin{center}
-            
+            稳定发射机构
         \end{center} &
         \begin{center}
-            
+            在上赛季的基础上，对发射机构以及相关算法进行优化完善，避免卡弹，单发变双发
         \end{center} &
         \begin{center}
-            
+            电控方面，尝试新的堵转判断方式，减少堵转。机械方面，通过更改u型轴承间距，避免限位过紧
         \end{center} \\
         
     \hline
     
         \begin{center}
-            
+            键鼠控制逻辑优化
         \end{center} &
         \begin{center}
-            
+            新赛季换新操作手，不同操作习惯不同，做到不同车不同操作逻辑
         \end{center} &
         \begin{center}
-            
+            与操作手沟通修改键鼠控制逻辑，自己上手操控机器人进行对战，发现当前键鼠控制逻辑定制化进行修改
         \end{center} \\
         
     \hline
     
         \begin{center}
-            
+            比赛期间20000J能量使用策略制定
         \end{center} &
         \begin{center}
-            
+            新赛季20000J能量上限需要对能量分配进行制定，需要了解不同功率上限下进行各类行动所需能量，对能量消耗制定策略
         \end{center} &
         \begin{center}
-            
+            测算进行飞坡，上各个角度坡，走过设定进攻路线所消耗的能量。编写操作手主动关闭电容操作
         \end{center} \\
         
     \hline
     
         \begin{center}
-            
+            舵轮底盘
         \end{center} &
         \begin{center}
-            
+            实现基本的全向移动和陀螺
         \end{center} &
         \begin{center}
-            
+            使用队内现有可行的舵轮控制方案，通过舵轮运动学解算，实现舵轮全向移动和陀螺
         \end{center} \\
         
     \hline
